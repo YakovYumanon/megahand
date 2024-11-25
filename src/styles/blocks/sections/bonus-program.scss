@@ -1,0 +1,57 @@
+.bonus-program-section{ 
+    &__head{
+        overflow: hidden;
+        border-radius: 2.5rem;
+        grid-column: span 5;
+        background-color: $bg-accent;
+        
+        padding: 0 10rem;
+        display: flex;
+        gap: 2.917rem;
+        justify-content: space-between;
+        align-items: center;
+        button{
+            color: $text-primary;
+            cursor: pointer;
+        }
+        
+        &__info-block{
+            &__background{
+                position: relative;
+                display: flex;
+                &__phone{
+                    z-index: 3;
+                    width: 52rem;
+                    
+                }
+                &__vector1{
+                    width: 27.015rem;
+                    position: absolute;
+                    top: 3.5rem;
+                    left: 0;
+                }
+                &__vector2{
+                    width: 13.585rem;
+                    position: absolute;
+                    top: 3.5rem;
+                    right: 2.5rem;
+                   
+                    }
+            }
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            &__title{
+                @include heading_2;
+                
+            }
+            &__description{
+                @include text_1;
+                
+                width: 87%;
+                color: $text-primary;
+                
+            }
+        }
+    }
+}

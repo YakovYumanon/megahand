@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="../src/styles/main.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-section">
+            <div class="header-section__container ">
+                <div class="header-section__info-block">
+                    <div class="header-section__info-block__item main">
+                        <div class="header-section__info-block__item__item header-section__info-block__item__burger-logo">
+                            <div class="header-section__info-block__item__burger-logo__burger button_size_icon button_style_outline button ">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <a href="/" class="header-section__info-block__item__burger-logo__logo">
+                                <picture>
+                                    <source srcset="../src/images/logo-mobile.svg" media="(max-width: 768px)">
+                                    <img src="../src/images/logo.svg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="header-section__info-block__item__item header-section__info-block__item__search">
+                            <div class="input input_type_search input_state_static">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <a  class="button button_size_icon button_style_outline search-mobile" href="#"><img src="/src/images/search.svg" alt=""></a>
+                        <div class="header-section__info-block__item__item header-section__info-block__item__add">
+                            <a href="" class="header-section__info-block__item__add__link">
+                                <img src="../src/images/lk.svg" alt="">
+                            </a>
+                            <a href="" class="header-section__info-block__item__add__link">
+                                <img src="../src/images/favourites.svg" alt="">
+                            </a>
+                            <a href="" class="header-section__info-block__item__add__link">
+                                <img src="../src/images/cart.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-section__info-block__item">
+                        <ul class="header-section__info-block__item__item header-section__info-block__item__other">
+                            <li><a href=""><img src="../src/images/location.svg" alt=""><span>Москва</span></a></li>
+                            <li><a href=""><span>Календарь скидок</span></a></li>
+                            <li><a href=""><span>Магазины</span></a></li>
+                        </ul>
+                        <ul class="header-section__info-block__item__item header-section__info-block__item__categories">
+                            <li><a href=""><span>Женщинам</span></a></li>
+                            <li><a href=""><span>Мужчинам</span></a></li>
+                            <li><a href=""><span>Детям</span></a></li>
+                            <li><a href=""><span>Для дома</span></a></li>
+                            <li><a href=""><span>Высокое качество</span></a></li>
+                        </ul>
+                        <ul class="header-section__info-block__item__item header-section__info-block__item__bonuses">
+                            <li><a href=""><span>Бонусная программа</span></a></li>
+                            <li><a href=""><span>Получить 300 ₽</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-block">
+                    <div class="burger-block__burger">
+                        <div class="burger-block__burger__links">
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Сотрудничество</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">Бренды</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Помощь</a></li>
+                            </ul>
+                        </div>
+                        <div class="burger-block__burger__contact-us">
+                            <div class="burger-block__burger__contact-us__phone-socials">
+                                <div class="burger-block__burger__contact-us__phone-socials__phone">
+                                    <a href="tel: 8(800) 250-61-68">8(800) 250-61-68</a>
+                                </div>
+                                <div class="burger-block__burger__contact-us__phone-socials__socials">
+                                    <a href="#" class="button button_size_icon-small button_style_gray"><img src="../src/images/social/vk.png" alt=""></a>
+                                    <a href="#" class="button button_size_icon-small button_style_gray"><img src="../src/images/social/tg.png" alt=""></a>
+                                    <a href="#" class="button button_size_icon-small button_style_gray"><img src="../src/images/social/ok.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="burger-block__burger__contact-us__politics">
+                                    <a href="#" class="burger-block__burger__contact-us__politics__link">Условия пользования</a>
+                                    <a href="#" class="burger-block__burger__contact-us__politics__link">Политика конфиденциальности</a>
+                            </div>
+                            <div class="burger-block__burger__contact-us__descriptions">
+                                <span><a href="#"></a>Разработал: @Kinozhoi</span>
+                                <span>©️ Мегахенд 2024. Все права защищены. </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <section class="pv-30">
+            <div class="advantages-section">
+                <div class="advantages-section__container container">
+                    <div class="advantages-section__info-block">
+                        <div class="advantages-section__info-block__bann">
+                            <div class="swiper bannSlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="../src/images/bann/bann1-mobile.png" media="(max-width: 768px)">
+                                        <img src="../src/images/bann/bann1.png" alt="">
+                                    </picture>
+                                    </div>
+                                  <a href="https://www.google.ru/" class="swiper-slide"> <img src="/src/images/bann/bann2.png" alt=""> </a>
+                                  <div class="swiper-slide"><img src="/src/images/bann/bann3.png" alt=""></div>
+                                </div>  
+                        </div>
+                        <button class="button button_size_icon button_style_outline prev"><img src="../src/images/left.svg" alt=""></button>
+                        <button class="button button_size_icon button_style_outline next"><img src="../src/images/right.svg" alt=""></button>
+                    </div>
+                    
+                    <div class="advantages-section__info-block__additional">
+                        <div class="advantages-section__info-block__additional__information">
+                            <div class="advantages-section__info-block__additional__information__title">Календарь скидок</div>
+                            <div class="advantages-section__info-block__additional__information__description">Узнай, какой процент скидок ждет тебя в этом месяце!</div>
+                            <img src="/src/images/advantages-add-1.png" alt="">
+                        </div>
+                        <div class="advantages-section__info-block__additional__information">
+                            <div class="advantages-section__info-block__additional__information__title">Бонусная программа</div>
+                            <div class="advantages-section__info-block__additional__information__description">Увеличивай процент кешбека и копи баллы с покупок!</div>
+                            <img src="/src/images/advantages-add-2.png" alt="">
+                        </div>
+                        <div class="advantages-section__info-block__additional__information">
+                            <div class="advantages-section__info-block__additional__information__title">Магазины</div>
+                            <div class="advantages-section__info-block__additional__information__description">Карта магазинов в твоем городе и данные для связи</div>
+                            <img src="/src/images/advantages-add-3.png" alt="">
+                        </div>
+                        <div class="advantages-section__info-block__additional__information">
+                            <div class="advantages-section__info-block__additional__information__title">Помощь</div>
+                            <div class="advantages-section__info-block__additional__information__description">Важная информация о магазинах и ответы на ваши вопросы</div>
+                            <img src="/src/images/advantages-add-4.png" alt="">
+                        </div>
+                        <div class="advantages-section__info-block__additional__information advantages-section__info-block__additional__information_yellow ">
+                            <div class="advantages-section__info-block__additional__information__title">Получить 300 ₽</div>
+                            <div class="advantages-section__info-block__additional__information__description">Работает, если ты еще не совершал(а) покупки.</div>
+                            <img src="/src/images/advantages-add-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pv-60">
+        <div class="new-product-section">
+            <div class="new-product-section__container container">
+                <div class="new-product-section__head">
+                    <div class="new-product-section__head__title">Новинки</div>
+                    <div class="new-product-section__head__additional">
+                        <a href="#">Все товары</a>
+                    </div>
+             </div>
+                <div class="new-product-section__info-block">
+                    <div class="product-card">
+                        <div class="product-card__images">
+                            <div class="swiper productGallerySlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/src/images/5023a5a5-42ef-464f-910f-dae7613143d5.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/9a06a9d5fb3daddd463ae7f84b82904f.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i4.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                        
+                        <div class="product-card__information">
+                            <div class="product-card__information__price-block">
+                                <div class="product-card__information__price-block__price">7 010 ₽</div>
+                                <div class="product-card__information__price-block__cashback">
+                                    <img src="../src/images/Prize_green.svg" alt="">
+                                    <span>578 ₽</span>
+                                </div>
+                                <div class="product-card__information__price-block__old-price-block">
+                                    <div class="product-card__information__price-block__old-price-block__price">22 340</div>
+                                    <div class="product-card__information__price-block__old-price-block__sale">-40%</div>
+                                </div>
+                            </div>
+                            <div class="product-card__information__name">Кроссовки QUESTAR 2 M, черные, 43</div>
+                            <div class="product-card__information__add">
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/size.svg" alt="">
+                                    <span>43</span>
+                                </div>
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/quality.svg" alt="">
+                                    <span>Среднее</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_size_basic button_style_accent buy">Купить</button>
+                            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__images">
+                            <div class="swiper productGallerySlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/src/images/5023a5a5-42ef-464f-910f-dae7613143d5.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/9a06a9d5fb3daddd463ae7f84b82904f.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i4.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                        
+                        <div class="product-card__information">
+                            <div class="product-card__information__price-block">
+                                <div class="product-card__information__price-block__price">7 010 ₽</div>
+                                <div class="product-card__information__price-block__cashback">
+                                    <img src="../src/images/Prize_green.svg" alt="">
+                                    <span>578 ₽</span>
+                                </div>
+                                <div class="product-card__information__price-block__old-price-block">
+                                    <div class="product-card__information__price-block__old-price-block__price">22 340</div>
+                                    <div class="product-card__information__price-block__old-price-block__sale">-40%</div>
+                                </div>
+                            </div>
+                            <div class="product-card__information__name">Кроссовки QUESTAR 2 M, черные, 43</div>
+                            <div class="product-card__information__add">
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/size.svg" alt="">
+                                    <span>43</span>
+                                </div>
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/quality.svg" alt="">
+                                    <span>Среднее</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_size_basic button_style_accent buy">Купить</button>
+                            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__images">
+                            <div class="swiper productGallerySlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/src/images/5023a5a5-42ef-464f-910f-dae7613143d5.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/9a06a9d5fb3daddd463ae7f84b82904f.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i4.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                        
+                        <div class="product-card__information">
+                            <div class="product-card__information__price-block">
+                                <div class="product-card__information__price-block__price">7 010 ₽</div>
+                                <div class="product-card__information__price-block__cashback">
+                                    <img src="../src/images/Prize_green.svg" alt="">
+                                    <span>578 ₽</span>
+                                </div>
+                                <div class="product-card__information__price-block__old-price-block">
+                                    <div class="product-card__information__price-block__old-price-block__price">22 340</div>
+                                    <div class="product-card__information__price-block__old-price-block__sale">-40%</div>
+                                </div>
+                            </div>
+                            <div class="product-card__information__name">Кроссовки QUESTAR 2 M, черные, 43</div>
+                            <div class="product-card__information__add">
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/size.svg" alt="">
+                                    <span>43</span>
+                                </div>
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/quality.svg" alt="">
+                                    <span>Среднее</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_size_basic button_style_accent buy">Купить</button>
+                            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__images">
+                            <div class="swiper productGallerySlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/src/images/5023a5a5-42ef-464f-910f-dae7613143d5.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images//9a06a9d5fb3daddd463ae7f84b82904f.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i4.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                        
+                        <div class="product-card__information">
+                            <div class="product-card__information__price-block">
+                                <div class="product-card__information__price-block__price">7 010 ₽</div>
+                                <div class="product-card__information__price-block__cashback">
+                                    <img src="../src/images/Prize_green.svg" alt="">
+                                    <span>578 ₽</span>
+                                </div>
+                                <div class="product-card__information__price-block__old-price-block">
+                                    <div class="product-card__information__price-block__old-price-block__price">22 340</div>
+                                    <div class="product-card__information__price-block__old-price-block__sale">-40%</div>
+                                </div>
+                            </div>
+                            <div class="product-card__information__name">Кроссовки QUESTAR 2 M, черные, 43</div>
+                            <div class="product-card__information__add">
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/size.svg" alt="">
+                                    <span>43</span>
+                                </div>
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/quality.svg" alt="">
+                                    <span>Среднее</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_size_basic button_style_accent buy">Купить</button>
+                            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__images">
+                            <div class="swiper productGallerySlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/src/images/5023a5a5-42ef-464f-910f-dae7613143d5.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/9a06a9d5fb3daddd463ae7f84b82904f.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i4.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                        
+                        <div class="product-card__information">
+                            <div class="product-card__information__price-block">
+                                <div class="product-card__information__price-block__price">7 010 ₽</div>
+                                <div class="product-card__information__price-block__cashback">
+                                    <img src="../src/images/Prize_green.svg" alt="">
+                                    <span>578 ₽</span>
+                                </div>
+                                <div class="product-card__information__price-block__old-price-block">
+                                    <div class="product-card__information__price-block__old-price-block__price">22 340</div>
+                                    <div class="product-card__information__price-block__old-price-block__sale">-40%</div>
+                                </div>
+                            </div>
+                            <div class="product-card__information__name">Кроссовки QUESTAR 2 M, черные, 43</div>
+                            <div class="product-card__information__add">
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/size.svg" alt="">
+                                    <span>43</span>
+                                </div>
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/quality.svg" alt="">
+                                    <span>Среднее</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_size_basic button_style_accent buy">Купить</button>
+                            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pv-60">
+        <div class="bonus-program-section">
+            <div class="bonus-program-section__container container">
+                <div class="bonus-program-section__head">
+                    <div class="bonus-program-section__head__info-block">
+                        <div class="bonus-program-section__head__info-block__title">Бонусная программа</div>
+                        <div class="bonus-program-section__head__info-block__description">Совершай покупки с еще большей выгодой, используя клиентскую карту</div>
+                    </div>
+                    <div class="bonus-program-section__head__info-block__background">
+                        <img class="bonus-program-section__head__info-block__background__vector1" src="/src/images/Vector1.svg" alt="">
+                        <img class="bonus-program-section__head__info-block__background__phone" src="/src/images/bonuses-program.png" alt="">
+                        <img class="bonus-program-section__head__info-block__background__vector2" src="/src/images/Vector2.svg" alt="">
+                    </div>
+                    
+                    
+                    <button class="button button_size_large button_state_static">Подробнее</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="pv-60">
+        <div class="products-home-section">
+            <div class="products-home-section__container container">
+                <div class="products-home-section__info-block">
+                    <div class="product-card">
+                        <div class="product-card__images">
+                            <div class="swiper productGallerySlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/src/images/i.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i2.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i4.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                        
+                        <div class="product-card__information">
+                            <div class="product-card__information__price-block">
+                                <div class="product-card__information__price-block__price">7 010 ₽</div>
+                                <div class="product-card__information__price-block__cashback">
+                                    <img src="../src/images/Prize_green.svg" alt="">
+                                    <span>578 ₽</span>
+                                </div>
+                                <div class="product-card__information__price-block__old-price-block">
+                                    <div class="product-card__information__price-block__old-price-block__price">22 340</div>
+                                    <div class="product-card__information__price-block__old-price-block__sale">-40%</div>
+                                </div>
+                            </div>
+                            <div class="product-card__information__name">Кроссовки QUESTAR 2 M, черные, 43</div>
+                            <div class="product-card__information__add">
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/size.svg" alt="">
+                                    <span>43</span>
+                                </div>
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/quality.svg" alt="">
+                                    <span>Среднее</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_size_basic button_style_accent buy">Купить</button>
+                            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__images">
+                            <div class="swiper productGallerySlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/src/images/i.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i2.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i4.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                        
+                        <div class="product-card__information">
+                            <div class="product-card__information__price-block">
+                                <div class="product-card__information__price-block__price">7 010 ₽</div>
+                                <div class="product-card__information__price-block__cashback">
+                                    <img src="../src/images/Prize_green.svg" alt="">
+                                    <span>578 ₽</span>
+                                </div>
+                                <div class="product-card__information__price-block__old-price-block">
+                                    <div class="product-card__information__price-block__old-price-block__price">22 340</div>
+                                    <div class="product-card__information__price-block__old-price-block__sale">-40%</div>
+                                </div>
+                            </div>
+                            <div class="product-card__information__name">Кроссовки QUESTAR 2 M, черные, 43</div>
+                            <div class="product-card__information__add">
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/size.svg" alt="">
+                                    <span>43</span>
+                                </div>
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/quality.svg" alt="">
+                                    <span>Среднее</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_size_basic button_style_accent buy">Купить</button>
+                            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__images">
+                            <div class="swiper productGallerySlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/src/images/i.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i2.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i4.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                        
+                        <div class="product-card__information">
+                            <div class="product-card__information__price-block">
+                                <div class="product-card__information__price-block__price">7 010 ₽</div>
+                                <div class="product-card__information__price-block__cashback">
+                                    <img src="../src/images/Prize_green.svg" alt="">
+                                    <span>578 ₽</span>
+                                </div>
+                                <div class="product-card__information__price-block__old-price-block">
+                                    <div class="product-card__information__price-block__old-price-block__price">22 340</div>
+                                    <div class="product-card__information__price-block__old-price-block__sale">-40%</div>
+                                </div>
+                            </div>
+                            <div class="product-card__information__name">Кроссовки QUESTAR 2 M, черные, 43</div>
+                            <div class="product-card__information__add">
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/size.svg" alt="">
+                                    <span>43</span>
+                                </div>
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/quality.svg" alt="">
+                                    <span>Среднее</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_size_basic button_style_accent buy">Купить</button>
+                            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__images">
+                            <div class="swiper productGallerySlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/src/images/i.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i2.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i4.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                        
+                        <div class="product-card__information">
+                            <div class="product-card__information__price-block">
+                                <div class="product-card__information__price-block__price">7 010 ₽</div>
+                                <div class="product-card__information__price-block__cashback">
+                                    <img src="../src/images/Prize_green.svg" alt="">
+                                    <span>578 ₽</span>
+                                </div>
+                                <div class="product-card__information__price-block__old-price-block">
+                                    <div class="product-card__information__price-block__old-price-block__price">22 340</div>
+                                    <div class="product-card__information__price-block__old-price-block__sale">-40%</div>
+                                </div>
+                            </div>
+                            <div class="product-card__information__name">Кроссовки QUESTAR 2 M, черные, 43</div>
+                            <div class="product-card__information__add">
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/size.svg" alt="">
+                                    <span>43</span>
+                                </div>
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/quality.svg" alt="">
+                                    <span>Среднее</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_size_basic button_style_accent buy">Купить</button>
+                            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__images">
+                            <div class="swiper productGallerySlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/src/images/i.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i2.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i4.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                        
+                        <div class="product-card__information">
+                            <div class="product-card__information__price-block">
+                                <div class="product-card__information__price-block__price">7 010 ₽</div>
+                                <div class="product-card__information__price-block__cashback">
+                                    <img src="../src/images/Prize_green.svg" alt="">
+                                    <span>578 ₽</span>
+                                </div>
+                                <div class="product-card__information__price-block__old-price-block">
+                                    <div class="product-card__information__price-block__old-price-block__price">22 340</div>
+                                    <div class="product-card__information__price-block__old-price-block__sale">-40%</div>
+                                </div>
+                            </div>
+                            <div class="product-card__information__name">Кроссовки QUESTAR 2 M, черные, 43</div>
+                            <div class="product-card__information__add">
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/size.svg" alt="">
+                                    <span>43</span>
+                                </div>
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/quality.svg" alt="">
+                                    <span>Среднее</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_size_basic button_style_accent buy">Купить</button>
+                            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__images">
+                            <div class="swiper productGallerySlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/src/images/i.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i2.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i4.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                        
+                        <div class="product-card__information">
+                            <div class="product-card__information__price-block">
+                                <div class="product-card__information__price-block__price">7 010 ₽</div>
+                                <div class="product-card__information__price-block__cashback">
+                                    <img src="../src/images/Prize_green.svg" alt="">
+                                    <span>578 ₽</span>
+                                </div>
+                                <div class="product-card__information__price-block__old-price-block">
+                                    <div class="product-card__information__price-block__old-price-block__price">22 340</div>
+                                    <div class="product-card__information__price-block__old-price-block__sale">-40%</div>
+                                </div>
+                            </div>
+                            <div class="product-card__information__name">Кроссовки QUESTAR 2 M, черные, 43</div>
+                            <div class="product-card__information__add">
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/size.svg" alt="">
+                                    <span>43</span>
+                                </div>
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/quality.svg" alt="">
+                                    <span>Среднее</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_size_basic button_style_accent buy">Купить</button>
+                            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__images">
+                            <div class="swiper productGallerySlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/src/images/i.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i2.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i4.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                        
+                        <div class="product-card__information">
+                            <div class="product-card__information__price-block">
+                                <div class="product-card__information__price-block__price">7 010 ₽</div>
+                                <div class="product-card__information__price-block__cashback">
+                                    <img src="../src/images/Prize_green.svg" alt="">
+                                    <span>578 ₽</span>
+                                </div>
+                                <div class="product-card__information__price-block__old-price-block">
+                                    <div class="product-card__information__price-block__old-price-block__price">22 340</div>
+                                    <div class="product-card__information__price-block__old-price-block__sale">-40%</div>
+                                </div>
+                            </div>
+                            <div class="product-card__information__name">Кроссовки QUESTAR 2 M, черные, 43</div>
+                            <div class="product-card__information__add">
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/size.svg" alt="">
+                                    <span>43</span>
+                                </div>
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/quality.svg" alt="">
+                                    <span>Среднее</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_size_basic button_style_accent buy">Купить</button>
+                            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__images">
+                            <div class="swiper productGallerySlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/src/images/i.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i2.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i4.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                        
+                        <div class="product-card__information">
+                            <div class="product-card__information__price-block">
+                                <div class="product-card__information__price-block__price">7 010 ₽</div>
+                                <div class="product-card__information__price-block__cashback">
+                                    <img src="../src/images/Prize_green.svg" alt="">
+                                    <span>578 ₽</span>
+                                </div>
+                                <div class="product-card__information__price-block__old-price-block">
+                                    <div class="product-card__information__price-block__old-price-block__price">22 340</div>
+                                    <div class="product-card__information__price-block__old-price-block__sale">-40%</div>
+                                </div>
+                            </div>
+                            <div class="product-card__information__name">Кроссовки QUESTAR 2 M, черные, 43</div>
+                            <div class="product-card__information__add">
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/size.svg" alt="">
+                                    <span>43</span>
+                                </div>
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/quality.svg" alt="">
+                                    <span>Среднее</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_size_basic button_style_accent buy">Купить</button>
+                            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__images">
+                            <div class="swiper productGallerySlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/src/images/i.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i2.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i4.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                        
+                        <div class="product-card__information">
+                            <div class="product-card__information__price-block">
+                                <div class="product-card__information__price-block__price">7 010 ₽</div>
+                                <div class="product-card__information__price-block__cashback">
+                                    <img src="../src/images/Prize_green.svg" alt="">
+                                    <span>578 ₽</span>
+                                </div>
+                                <div class="product-card__information__price-block__old-price-block">
+                                    <div class="product-card__information__price-block__old-price-block__price">22 340</div>
+                                    <div class="product-card__information__price-block__old-price-block__sale">-40%</div>
+                                </div>
+                            </div>
+                            <div class="product-card__information__name">Кроссовки QUESTAR 2 M, черные, 43</div>
+                            <div class="product-card__information__add">
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/size.svg" alt="">
+                                    <span>43</span>
+                                </div>
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/quality.svg" alt="">
+                                    <span>Среднее</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_size_basic button_style_accent buy">Купить</button>
+                            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__images">
+                            <div class="swiper productGallerySlider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="/src/images/i.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i2.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="/src/images/i4.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                        
+                        <div class="product-card__information">
+                            <div class="product-card__information__price-block">
+                                <div class="product-card__information__price-block__price">7 010 ₽</div>
+                                <div class="product-card__information__price-block__cashback">
+                                    <img src="../src/images/Prize_green.svg" alt="">
+                                    <span>578 ₽</span>
+                                </div>
+                                <div class="product-card__information__price-block__old-price-block">
+                                    <div class="product-card__information__price-block__old-price-block__price">22 340</div>
+                                    <div class="product-card__information__price-block__old-price-block__sale">-40%</div>
+                                </div>
+                            </div>
+                            <div class="product-card__information__name">Кроссовки QUESTAR 2 M, черные, 43</div>
+                            <div class="product-card__information__add">
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/size.svg" alt="">
+                                    <span>43</span>
+                                </div>
+                                <div class="product-card__information__add__img-name">
+                                    <img src="../src/images/quality.svg" alt="">
+                                    <span>Среднее</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_size_basic button_style_accent buy">Купить</button>
+                            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pv-60">
+        <div class="brands-section">
+            <div class="brands-section__container container">
+                <div class="brands-section__slider">
+                    <div class="swiper brandsSlider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="/src/images/brands/brand-1.png" alt=""></div>
+                          <div class="swiper-slide"><img src="/src/images/brands/brand-2.png" alt=""></div>
+                          <div class="swiper-slide"><img src="/src/images/brands/brand-3.png" alt=""></div>
+                          <div class="swiper-slide"><img src="/src/images/brands/brand-4.png" alt=""></div>
+                          <div class="swiper-slide"><img src="/src/images/brands/brand-5.png" alt=""></div>
+                          <div class="swiper-slide"><img src="/src/images/brands/brand-3.png" alt=""></div>
+                        </div>  
+                </div>
+                <button class="button button_size_icon button_style_outline prev"><img src="../src/images/left.svg" alt=""></button>
+                <button class="button button_size_icon button_style_outline next"><img src="../src/images/right.svg" alt=""></button>
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-section">
+            <div class="footer-section__container container">
+                <div class="footer-section__info-block">
+                    <div class="footer-section__info-block__mailing-social">
+                        <div class="footer-section__info-block__mailing-social__mailing">
+                            <div class="footer-section__info-block__mailing-social__mailing__head">
+                                <div class="footer-section__info-block__mailing-social__mailing__head__title">Подпишись на рассылку</div>
+                                <div class="footer-section__info-block__mailing-social__mailing__head__description">И узнавай первым о новых скидках и акциях.</div>
+                            </div>
+                             <div class="footer-section__info-block__mailing-social__mailing__body">
+                                <div class="input input_type_button input_state_static">
+                                    <input type="text">
+                                    <button class="button button_size_icon-small button_style_ghost-subdued"><img src="/src/images/right.svg" alt=""></button>                                        
+                                </div>
+                             </div>
+                        </div>
+                        <div class="footer-section__info-block__mailing-social__social">
+                            <div class="app">
+                                <div class="app__qr"><img src="/src/images/qr.svg" alt=""></div>
+                                <div class="app__information">
+                                    <div class="app__information__title">Скачивай наше приложение</div>
+                                    <div class="app__information__description">И используй бонусную программу по полной!</div>
+                                </div>
+                            </div>
+                            <div class="footer-section__info-block__mailing-social__social__links">
+                                <a href="#" class="button button_size_icon-small button_style_gray"><img src="/src/images/social/vk.png" alt=""></a>
+                                <a href="#" class="button button_size_icon-small button_style_gray"><img src="/src/images/social/tg.png" alt=""></a>
+                                <a href="#" class="button button_size_icon-small button_style_gray"><img src="/src/images/social/ok.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-section__info-block__menu">
+                        <div class="footer-section__info-block__menu__item">
+                            <div class="footer-section__info-block__menu__item__title">О компании</div>
+                            <ul>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                                <li><a href="#">Магазины</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="footer-section__info-block__menu__item">
+                            <div class="footer-section__info-block__menu__item__title">Сотрудничество</div>
+                            <ul>
+                                <li><a href="#">Оптовикам</a></li>
+                                <li><a href="#">Арендодателям</a></li>
+                                <li><a href="#">Реклама</a></li>
+                                
+
+                            </ul>
+                        </div>
+                        <div class="footer-section__info-block__menu__item">
+                            <div class="footer-section__info-block__menu__item__title">Помощь</div>
+                            <ul>
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">Условия возврата</a></li>
+                                <li><a href="#">Вопрос-ответ</a></li>
+                                
+
+                            </ul>
+                        </div>
+                        <div class="footer-section__info-block__menu__item">
+                            <div class="footer-section__info-block__menu__item__title">Бонусы</div>
+                            <ul>
+                                <li><a href="#">Календарь скидок</a></li>
+                                <li><a href="#">Бонусная программа</a></li>
+                                <li><a href="#">Получить 300 ₽</a></li>
+                                <li><a href="#">Акции</a></li>
+                                
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-section__info-block__other">
+                        <div class="footer-section__info-block__other__links">
+                            <a class="footer-section__info-block__other__links__link">Условия пользования</a>
+                            <a class="footer-section__info-block__other__links__link">Политика конфиденциальности</a>
+                        </div>
+                        <div class="footer-section__info-block__other__description">
+                            <span>Разработал: <a href="#"> @Kinozhoi</a></span>
+                            <span>©️ Мегахенд 2024. Все права защищены. </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+   
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script type="module" src="../src/scripts/app.js"></script>
+</body>
+</html>
